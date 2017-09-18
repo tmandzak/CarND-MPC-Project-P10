@@ -7,7 +7,7 @@ Self-Driving Car Engineer Nanodegree Program
 * The Model
 The following kinematic model was used as suggested in lessons:
 
-![Model](./Images/Model_.png)
+![Model](images/Model_.png)
 
 The model takes into account the fact that in the simulator a positive value implies a right turn and a negative value implies a left turn. 
 
