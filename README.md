@@ -5,6 +5,7 @@ Self-Driving Car Engineer Nanodegree Program
 ## Reflection
 
 * The Model
+
 The following kinematic model was used as suggested in lessons:
 
 ![Model](https://github.com/tmandzak/CarND-MPC-Project-P10/blob/master/images/Model_.PNG)
@@ -12,9 +13,11 @@ The following kinematic model was used as suggested in lessons:
 The model takes into account the fact that in the simulator a positive value implies a right turn and a negative value implies a left turn. 
 
 * Timestep Length and Elapsed Duration (N & dt)
+
 Initial values for N and dt were chosen to be the same as in the lesson's CARND-MPC-Quizz / mpc_to_line project: N = 25, dt = 0.05 and this choice worked not well under condition of zero latency and reference velocity of 40. Setting N to 10 solved this problem.  
 
 * Model Predictive Control with Latency
+
 Setting latency time to 100ms introduced fluctuations into the car's movement. To solve it the weight of 250 was introduced in epsi part of the cos function (line 56 of MCP.cpp).
 
 
